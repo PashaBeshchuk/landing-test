@@ -1,0 +1,57 @@
+.footer-container {
+    display: flex;
+    text-align: center;
+    justify-content: space-between; 
+    align-items: center;     /* центр по вертикали */
+    gap: 40px;               /* расстояние между ссылками и копирайтом */
+    padding: 20px;
+    flex-wrap: wrap;         /* чтобы при маленьких экранах элементы не ломались */
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 20px;               /* расстояние между отдельными ссылками */
+  }
+  
+  .footer-link {
+    cursor: pointer;
+    color: #91A0B6;
+    font-size: 14px;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-copy {
+    font-size: 14px;
+    color: #91A0B6;
+  }
+  
+
+
+  @media (max-width: 768px) {
+    .footer-container {
+      justify-content: center;
+      flex-direction: column;
+    }
+    .footer-links {
+      flex-direction: column;
+    }
+  }
+
+  @media (min-width: 769px) {
+    .header__left {
+      display: none;
+    }
+    .header__menu {
+      display: none;
+    }
+    .header__left__desktop {
+      display: flex;
+    }
+    .header__menu__desktop {
+      display: block;
+    }
+  }
+  

@@ -1,0 +1,45 @@
+.skeleton-card {
+    width: 100%;
+    max-width: 521px;
+    min-width: 200px;
+    border-radius: 12px;
+    overflow: hidden; /* чтобы картинка и элементы не вылезали */
+    margin: 20px auto;
+    font-family: sans-serif;
+  }
+  
+  .skeleton-card-image {
+    width: 100%;
+    height: 200px; /* высота блока картинки, можно сделать адаптивной через vh */
+    background-color: #E0E5EE;
+    border-radius: 12px;
+  }
+  
+  
+  .skeleton-card-content {
+    padding: 16px 0px;
+  }
+  
+  .skeleton-card-date {
+    width: 151px;
+    height: 12px;
+    background-color: #E0E5EE;
+    margin-bottom: 4px;
+    border-radius: 4px;
+  }
+  
+  .skeleton-card-title {
+    width: 229px;
+    height: 23px;
+    background-color: #E0E5EE;
+    margin: 8px 0px;
+    border-radius: 4px;
+  }
+  
+  .skeleton-card-text {
+    width: 337px;
+    height: 78px;
+    background-color: #E0E5EE;
+    border-radius: 4px;
+  }
+  

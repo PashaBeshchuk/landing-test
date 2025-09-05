@@ -1,0 +1,90 @@
+.card {
+    width: 100%;
+    max-width: 521px;
+    min-width: 200px;
+    border-radius: 12px;
+    overflow: hidden; 
+    font-family: sans-serif;
+  }
+
+  .card-image {
+    width: 100%;
+    height: 200px; /* высота блока картинки, можно сделать адаптивной через vh */
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* растягиваем и обрезаем при необходимости */
+    display: block;
+  }
+  
+  .card-content {
+    padding: 16px 0px;
+    max-width: 521px;
+  }
+  
+  .card-date {
+    font-weight:400;
+    font-size: 16px;
+    color: #ADB8C8;
+    margin-bottom: 4px;
+  }
+  
+  .card-title {
+    font-weight: 700;
+    font-size: 24px;
+    font-weight: bold;
+    color:#242424;
+    margin: 8px 0px;
+  }
+  
+  .card-text {
+    font-weight: 400;
+    font-size: 16px;
+    color: #78787A;
+    line-height: 1.5;
+  
+    display: -webkit-box;
+    -webkit-line-clamp: 6;     
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  @media (max-width: 768px) {
+    .card {
+      margin: 0;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .card.new {
+      display: flex;
+      gap: 32px;
+      max-width: 100%;
+    }
+    .card-date.new {
+      margin-bottom: 20px;
+    }
+    .card-image.new {
+      min-width: 377px;
+      height: 364px;
+    }
+    .card-title.new {
+      font-weight: 700;
+      font-size: 48px;
+      margin-bottom: 30px;
+    }
+    .card-content.new {
+      padding: 0;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .card-image.new {
+      min-width: 227px;
+      height: 364px;
+    }
+  }

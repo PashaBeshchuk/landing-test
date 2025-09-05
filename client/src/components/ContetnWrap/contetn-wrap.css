@@ -1,0 +1,12 @@
+.content-wrap {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+
+@media (min-width: 769px) {
+  .content-wrap {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+}
